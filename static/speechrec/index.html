@@ -1,0 +1,44 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Meeting Minutes Capture</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Meeting Minutes Capture is an online meeting minutes software powered by Google Chrome" />
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='dictation.css' rel="stylesheet">
+	<link href='chat.css' rel="stylesheet">
+</head>
+
+<body>
+
+<div class="notepad-heading">
+	<h1>Meeting Minutes Capture</h1>
+</div>
+<div class="notepad">
+	<div id="speech">
+		<span id="labnol" contenteditable="true"> Click the Start Button and dictate. </span>
+		<span id="notfinal"></span>
+		<span id="warning"></span>
+	</div>
+	<div class="whatisthis">
+		<span id="messages">
+			<a href="#" onclick="javascript:toggleMeeting(); return false;" id="btnToggleMeeting" title = "End the meeting">Start New Meeting</a>
+			<a href="#" onclick="javascript:action(); return false;" id="btn" >Loading..</a>
+			<a href="#" onclick="javascript:clearSlate(); return false;" id="btnClear" >Clear</a>
+			<input id="btnSaveStrategy" type="checkbox" onclick="javascript:toggleSaveStrategy();">Enable Auto Sync</input>
+			<a href="#" onclick="javascript:save(); return false;" id="btnForceSync" title="Store your file in the cloud" >Force Sync</a>
+			<img id="status" src="listen.gif"/>
+		</span>
+	</div>
+</div>
+
+<div class="tvhanger">
+</div>
+
+<script src="dictation.js"></script>
+
+</body>
+
+
+
+
